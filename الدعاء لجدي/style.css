@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+}
+
+.container {
+    max-width: 720px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* العناوين */
+h1 {
+    font-size: clamp(26px, 5vw, 34px);
+    margin-bottom: 6px;
+}
+
+h2 {
+    font-size: clamp(18px, 4vw, 22px);
+    font-weight: 400;
+    margin: 4px 0;
+}
+
+h3 {
+    font-size: clamp(20px, 4.5vw, 26px);
+    margin-bottom: 22px;
+    color: #ffd369;
+}
+
+/* الكروت */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 18px;
+    border-radius: 16px;
+    margin-bottom: 18px;
+}
+
+/* عناوين داخل الكروت */
+.card h4 {
+    margin-bottom: 10px;
+    font-size: clamp(18px, 4vw, 22px);
+    color: #ffd369;
+}
+
+/* الدعاء */
+.dua {
+    font-size: clamp(16px, 4vw, 18px);
+    line-height: 1.9;
+}
+
+/* القرآن */
+.quran {
+    font-size: clamp(15px, 3.8vw, 17px);
+    line-height: 2;
+}
+
+/* زر واتساب */
+.whatsapp-btn {
+    display: block;
+    width: 100%;
+    margin: 25px auto 10px;
+    padding: 16px;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 14px;
+    font-size: clamp(16px, 4vw, 18px);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+}
+
+/* تحسين اللمس للموبايل */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
